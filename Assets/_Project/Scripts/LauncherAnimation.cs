@@ -12,6 +12,9 @@ public class LauncherAnimation : MonoBehaviour
 	private Vector3 animTriggerPos;
 	private ActionBasedController ABC;
 
+	public GameObject bulletPrefab;
+	public Transform startBulletPos;
+
 	private void Awake()
 	{
 		startTriggerPos = trigger.localPosition;
@@ -37,6 +40,7 @@ public class LauncherAnimation : MonoBehaviour
 		if (context.performed)
 		{
 			trigger.localPosition = animTriggerPos;
+			Instantiate(bulletPrefab, startBulletPos.position, Quaternion.identity);
 		}
 		else
 		{

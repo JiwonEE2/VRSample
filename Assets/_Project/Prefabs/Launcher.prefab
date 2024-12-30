@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2769929987613485272
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 529084564668435934}
+  m_Layer: 0
+  m_Name: Bullet Start Pos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &529084564668435934
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2769929987613485272}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.272}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3397158653967379340}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2931729792072141927
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54,7 +85,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a013995b2ae21e544bcc487400f8dbd2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 529084564668435934}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a013995b2ae21e544bcc487400f8dbd2, type: 3}
       insertIndex: -1
@@ -78,6 +112,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: {fileID: 3628442039176418383}
+  bulletPrefab: {fileID: 6881581312098903773, guid: e436071b5581baf499470dbc5d0528ff, type: 3}
+  startBulletPos: {fileID: 529084564668435934}
+--- !u!4 &3397158653967379340 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a013995b2ae21e544bcc487400f8dbd2, type: 3}
+  m_PrefabInstance: {fileID: 2931729792072141927}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3628442039176418383 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7280833534005635032, guid: a013995b2ae21e544bcc487400f8dbd2, type: 3}
