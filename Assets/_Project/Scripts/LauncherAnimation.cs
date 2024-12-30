@@ -40,7 +40,7 @@ public class LauncherAnimation : MonoBehaviour
 		if (context.performed)
 		{
 			trigger.localPosition = animTriggerPos;
-			Instantiate(bulletPrefab, startBulletPos.position, Quaternion.identity);
+			Instantiate(bulletPrefab, startBulletPos.position, startBulletPos.rotation);
 		}
 		else
 		{
